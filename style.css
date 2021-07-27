@@ -24,13 +24,13 @@ height: 100%;
   list-style: none;
   display: flex; 
 }
-#career{
+/* #career{
 	font-size: 20px;
 	display: inline-block;
 	padding: 20px ;
 	scroll-behavior: smooth; 
-}
-#product{
+} */
+.inner nav ul li #product{
 	font-size: 20px;
 	display: inline-block;
 	padding: 20px ;
