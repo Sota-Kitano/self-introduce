@@ -6,7 +6,7 @@
 <title>自己紹介HP_北野聡太</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<script type="test/javascript" src="js.js"></script>
+<script type="text/javascript" src="js.js"></script>
 </head>
 <body>
   
@@ -33,7 +33,32 @@
 <div id="container" role="main">
     <div><section id="career">経歴</section></div>
     <div><section id="product">過去の受注案件</section></div>
-    <div><section id="contact">問い合わせ</section></div>
+    <div><section id="contact">問い合わせ<p></p>
+    <form action="index.html" method="post" name="mail_form">
+
+        <div class="contact_name">
+            名前 : <input type="text" name="yourname">
+        </div>
+
+        <div class="contact_telnum">
+            電話番号 : <input type="text" name="telnum">
+        </div>
+
+        <div class="contactmail">
+            メールアドレス : <input type="text" name="mailaddress">
+        </div>
+        
+        <div class="contact_contents">
+            お問い合わせ内容 : <p></p>
+            <textarea id="contactContent" type="text" name="contents"></textarea>
+        </div>
+        
+        <input type="submit" value="送信" onclick="return check();">
+        
+        
+    </form>
+    
+    </section></div>
 
 </div>
 
