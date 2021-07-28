@@ -7,12 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="js.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 </head>
+
 <body>
   
-<header id="page-header" role="banner">
-    <div class="inner">
-        <nav>
+<header>
+    <div>
+        <nav id="menubar">
             <ul>
                 <li><a href="#career">経歴</a></li>
                 <li><a href="#product">過去の受注案件</a></li>
@@ -31,29 +33,30 @@
 
 
 <div id="container" role="main">
-    <div><section id="career">経歴</section></div>
-    <div><section id="product">過去の受注案件</section></div>
-    <div><section id="contact">問い合わせ<p></p>
-    <form action="index.html" method="post" name="mail_form">
+    <div><section id="career"><h2>経歴</h2></section></div>
+    <div><section id="product"><h2>過去の受注案件</h2></section></div>
+    <div><section id="contact"><h2>問い合わせ</h2><p></p>
+    <form action="index.html" method="post" name="mail_form" onSubmit="ButtonClick()">
 
         <div class="contact_name">
-            名前 : <input type="text" name="yourname">
+            名前 : <input type="text" name="yourname" >
         </div>
 
         <div class="contact_telnum">
-            電話番号 : <input type="text" name="telnum">
+            電話番号 : <input type="tel" name="telnum">
         </div>
 
-        <div class="contactmail">
-            メールアドレス : <input type="text" name="mailaddress">
+        <div class="contact_mail">
+            メールアドレス : <input type="email" name="mailaddress" >
         </div>
         
         <div class="contact_contents">
             お問い合わせ内容 : <p></p>
-            <textarea id="contactContent" type="text" name="contents"></textarea>
+            <textarea id="contactContent" type="text" name="contents" ></textarea>
         </div>
         
-        <input type="submit" value="送信" onclick="return check();">
+        <input class="submit" id="submit" type="submit" value="送信" >
+        
         
         
     </form>
@@ -64,3 +67,4 @@
 
 
 </body>
+</html>
