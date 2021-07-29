@@ -35,18 +35,6 @@ function ButtonClick() {
   Contents.focus();
   return false;
   }
-  document.Name.value = navigator.userAgent;
   alert ('送信しますか?');
   return true;
   }
-
-// }function checkcont(){
-//   if (){
-//       //条件に一致する場合(メールアドレスが空の場合)
-//       alert ("お問い合わせ内容を入力してください");    //エラーメッセージを出力
-//       return false;    //送信ボタン本来の動作をキャンセルします
-//   }else{
-//       //条件に一致しない場合(メールアドレスが入力されている場合)
-//       return true;    //送信ボタン本来の動作を実行します
-//   }
-// }
