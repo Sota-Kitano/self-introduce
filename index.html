@@ -6,7 +6,6 @@
 <title>自己紹介HP_北野聡太</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="js.js"></script>
 </head>
 
 <body>
@@ -37,24 +36,24 @@
     <div><section id="contact"><h2>問い合わせ</h2><p></p>
     <form action="index.html" method="post" name="mail_form" onSubmit="ButtonClick()">
 
-        <div class="contact_name">
-            名前 : <input type="text" name="yourname" >
+        <div>
+            名前 : <input type="text" name="your_name" >
         </div>
 
-        <div class="contact_telnum">
-            電話番号 : <input type="tel" name="telnum">
+        <div>
+            電話番号 : <input type="tel" name="tel_num">
         </div>
 
-        <div class="contact_mail">
-            メールアドレス : <input type="email" name="mailaddress" >
+        <div>
+            メールアドレス : <input type="email" name="mail_address" >
         </div>
         
-        <div class="contact_contents">
+        <div>
             お問い合わせ内容 : <p></p>
-            <textarea id="contactContent" type="text" name="contents" ></textarea>
+            <textarea type="text" name="contents" ></textarea>
         </div>
         
-        <input class="submit" id="submit" type="submit" value="送信" >
+        <input type="submit" value="送信" >
         
         
         
@@ -64,6 +63,7 @@
 
 </div>
 
+<script type="text/javascript" src="js.js"></script>
 
 </body>
 </html>

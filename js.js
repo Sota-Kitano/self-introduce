@@ -10,9 +10,9 @@ function ButtonClick() {
   var TelNum;
   var Mail;
   var Contents;
-  Name=document.mail_form.yourname;
-  TelNum=document.mail_form.telnum;
-  Mail=document.mail_form.mailaddress;
+  Name=document.mail_form.your_name;
+  TelNum=document.mail_form.tel_num;
+  Mail=document.mail_form.mail_address;
   Contents=document.mail_form.contents;
   
   if(Name.value==""){
